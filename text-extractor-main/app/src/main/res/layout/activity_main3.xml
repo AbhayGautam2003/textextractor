@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#124CBEF8"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:translationY="-4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/result"
+            android:textColor="#45c0ff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/copy"
+        android:textAlignment="center"
+        android:textColor="#45c0ff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a3b1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/a3b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="#45c0ff"
+        android:clickable="true"
+        android:contentDescription="@string/todo"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeCopyDrawable" />
+
+    <ScrollView
+        android:layout_width="381dp"
+        android:layout_height="491dp"
+        android:background="@drawable/round"
+        android:backgroundTint="#2A4CBEF8"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/a3b1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.638">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/a3t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu"
+                android:padding="10dp"
+                android:text="@string/textiiview"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

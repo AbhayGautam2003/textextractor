@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45c0ff"
+    android:backgroundTint="#45c0ff"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="345dp"
+        android:layout_height="156dp"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/text_extractor"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="262dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/get_text_from_your_images"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="207dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/let_s_gow"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="371dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logopng"
+        android:contentDescription="@string/todooooo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
